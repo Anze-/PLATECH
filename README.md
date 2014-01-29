@@ -7,8 +7,6 @@ This php script is intended to use with the clsipy latex compiler server display
 The purpose is to quicken up the load times of webpages containing embedded compiled latex pictures (even dinamically requested), cut down the number of requests to the compiler and decrease the webpage bandwith usage thanks to saving the compiled latex outputs to a local folder with a unique name, and looking for a saved image before sending the request the the clsipy server.
 
 
-~~~~~~~~~~~~~~~~
-
 # Installation
     1) Check for php to be enabled and create folder named e.g. 'myfolder'
     2) Place the index.php in 'myfolder'
@@ -20,9 +18,9 @@ you are done!
 # How To..
 
 To embed a latex formula e.g. the command \LaTeX with a resolution of 300 dpi you can use:
-
+~~~~~~~~~~~~~~~~
 	<img src="http://yourdom.ain/myfolder?l=\LaTeX&d=300">
-
+~~~~~~~~~~~~~~~~
 and here you go!
 
 
