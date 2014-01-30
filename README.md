@@ -6,6 +6,14 @@ This php script is intended to use with the clsipy latex compiler server display
 #Purposes
 The purpose is to quicken up the load times of webpages containing embedded compiled latex pictures (even dinamically requested), cut down the number of requests to the compiler and decrease the webpage bandwith usage thanks to saving the compiled latex outputs to a local folder with a unique name, and looking for a saved image before sending the request the the clsipy server.
 
+#New!
+Added a jQuery script to embed latex compiled images using the <latex dpi="integer">your \LatexCode</latex>.
+
+Steps to get this working: 
+    1)Install PLATECH
+    2)Copy/Paste the html in latex_tag.html (the comments will help you) to your <head>
+    3)Edit the 'server' variable to match your PLATECH install folder ( e.g. var server = "http://yourdom.ain/myfolder"; )
+    4)Use the <latex> tag freely in your doument <body>!
 
 # Installation
     1) Check for php to be enabled and create folder named e.g. 'myfolder'
