@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<!-- START COPYING THIS CODE IN THE HEAD -->
+<!-- This is a jquery plugin. Make your head look like this one, set the server variable to the path to PLATECH's index.php file folder[absolute path suggested]. Now you will be able to use <latex dpi="integer">\latexCode</latex> tags in your body! Copyright MIT Licence @ Alberto Anzellotti 2014. No warranty, use at your own risk. Citation would be appreciated! ;)-->
+<!--[if lt IE 9]> 
+ <script> document.createElement("latex"); </script>
+<![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>
+ var server = "http://yourdom.ain/myfolder"; //set this option to the folder of your PLATECH index.php 
+ $( document ).ready(function(){
+ $( "latex[dpi]" ).each(function() {
+   var queryStr = server + "?l=" + $( this ).text() + "&d=" + $( this ).attr( "dpi" );
+ $( this ).replaceWith( "<img src='" + queryStr +"' alt='"+ $( this ).text()+"'>");
+ });
+ });
+</script>
+<style>latex{display:inline;margin:0;padding:0;border:0;}</style>
+<!-- END COPYING CODE-->
+
+
+</head>
+<body>
+This is LaTeX: <latex dpi="300">\LaTeX</latex>..
+<br>
+..and also this:<latex dpi="300">$V=\frac{4 \pi r^3}{3}$</latex>
+</body>
+</html>
