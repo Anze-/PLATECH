@@ -9,6 +9,8 @@ The purpose is to quicken up the load times of webpages containing embedded comp
 #New!
 Added a jQuery script to embed latex compiled images using the <latex dpi="integer">your \LatexCode</latex>.
 
+Added full LaTeX support (now even arrays and matrices will work!) using urlencoding.
+
 Steps to get this working: 
     1)Install PLATECH
     2)Copy/Paste the html in latex_tag.html (the comments will help you) to your <head>

@@ -34,7 +34,7 @@ $debug= false; //debug mode on/off
 //set the paths and _GET attributes
 $path=substr($_SERVER['PHP_SELF'], 0, strrpos( $_SERVER['PHP_SELF'], '/')) . "/";
 
-$latex = str_replace(" ", '%20', stripslashes($_GET["l"]));
+$latex = urlencode($_GET["l"]);
 $density = $_GET["d"];
 if (intval($density)>intval($min_limit)){
 
@@ -47,24 +47,18 @@ else{
 $denslimit=intval($min_limit);
 }
 
-//generate unique name
-
-$Lsha = sha1($latex);
+$Lsha = sha1($_GET["l"]);
 $Dsha = sha1($density);
 $unique = $Lsha . "_" . $Dsha;
-if ($debug){echo $Lsha . "<br>" . $latex . "<br>" . $denslimit. "<br>" . $unique . "<br>" . $_SERVER["HTTP_HOST"] . "<br>" . substr($_SERVER['PHP_SELF'], 0, strrpos( $_SERVER['PHP_SELF'], '/')) . "<br>";}
+if ($debug){echo $Lsha . "<br>" . $_GET["l"] ."<br> to request:". $latex . "<br>" . $denslimit. "<br>" . $unique . "<br>" . $_SERVER["HTTP_HOST"] . "<br>" . substr($_SERVER['PHP_SELF'], 0, strrpos( $_SERVER['PHP_SELF'], '/')) . "<br>";}
 
-
-//find if picture is already cached
 
 $iscached=0;
 
 foreach(glob("./".$cachedir."*.png") as $file){
-if (basename($file, ".png")=="$unique"){$iscached=1;}
+if (basename($file, ".png")=="$unique"){$iscached=1;} //$unique
  if ($debug){echo $file ." - ". $iscached ."<br>";}
 }
-
-//set more variables
 
 $relpath="/".$cachedir . $unique . ".png";
 $abspath="http://" . $_SERVER["HTTP_HOST"] . $path . $cachedir . $unique . ".png";

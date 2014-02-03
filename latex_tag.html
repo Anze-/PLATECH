@@ -11,19 +11,25 @@
  var server = "http://yourdom.ain/myfolder"; //set this option to the folder of your PLATECH index.php 
  $( document ).ready(function(){
  $( "latex[dpi]" ).each(function() {
-   var queryStr = server + "?l=" + $( this ).text() + "&d=" + $( this ).attr( "dpi" );
+   //alert(encodeURIComponent($( this ).text())); //debugging alerts!
+   var queryStr = server + "?l=" + encodeURIComponent($( this ).text()) + "&d=" + $( this ).attr( "dpi" );
  $( this ).replaceWith( "<img src='" + queryStr +"' alt='"+ $( this ).text()+"'>");
  });
  });
 </script>
 <style>latex{display:inline;margin:0;padding:0;border:0;}</style>
-<!-- END COPYING CODE-->
-
 
 </head>
 <body>
 This is LaTeX: <latex dpi="300">\LaTeX</latex>..
 <br>
 ..and also this:<latex dpi="300">$V=\frac{4 \pi r^3}{3}$</latex>
+
+<br>
+NOW it also passes: <latex dpi="300">\[ \left( \begin{array}{ccc}
+a & b & c \\
+d & e & f \\
+g & h & i \end{array} \right)\] </latex>
+
 </body>
 </html>
