@@ -13,9 +13,10 @@
  $( "latex[dpi]" ).each(function() {
    //alert(encodeURIComponent($( this ).text())); //debugging alerts!
    var queryStr = server + "?l=" + encodeURIComponent($( this ).text()) + "&d=" + $( this ).attr( "dpi" );
- $( this ).replaceWith( "<img src='" + queryStr +"' alt='"+ $( this ).text()+"'>");
+ $( this ).replaceWith( "<img src='" + queryStr +"' alt='"+ $( this ).text()+"' id='"+ $( this ).attr('id') + "' class='latex "+ $( this ).attr('class') +"'>");
  });
  });
+
 </script>
 <style>latex{display:inline;margin:0;padding:0;border:0;}</style>
 
@@ -31,7 +32,7 @@ a & b & c \\
 d & e & f \\
 g & h & i \end{array} \right)\] </latex>
 
-
+<br>
 how cool!
 
 </body>
