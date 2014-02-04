@@ -11,7 +11,7 @@ The purpose is to quicken up the load times of webpages containing embedded comp
 
 + Added a jQuery script to embed latex compiled images using the <latex dpi="integer">your \LatexCode</latex>.
 
-+ Added `<latex>` default class as .latex ; now you can even set custom class and/or id to the latex tag to call it via js or css or whatever you want!
++ Added `<latex>` default class as `.latex`. Now you can even set custom class and/or id to the latex tag to call it via js or css or whatever you want!
 
 + Added full LaTeX support (now even arrays and matrices will work!) using urlencoding.
 
