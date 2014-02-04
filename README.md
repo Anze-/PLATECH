@@ -11,22 +11,22 @@ The purpose is to quicken up the load times of webpages containing embedded comp
 
 + Added a jQuery script to embed latex compiled images using the <latex dpi="integer">your \LatexCode</latex>.
 
-+ Added <latex> default class as .latex ; now you can even set custom class and/or id to the latex tag to call it via js or css or whatever you want!
++ Added `<latex>` default class as .latex ; now you can even set custom class and/or id to the latex tag to call it via js or css or whatever you want!
 
 + Added full LaTeX support (now even arrays and matrices will work!) using urlencoding.
 
-##Steps to get <latex> tag working:
+##Steps to get `<latex>` tag working:
 
-    1. Install PLATECH
-    2. Copy/Paste the html in latex_tag.html (the comments will help you) to your <head>
-    3. Edit the 'server' variable to match your PLATECH install folder ( e.g. var server = "http://yourdom.ain/myfolder"; )
-    4. Use the <latex> tag freely in your doument <body>!
+1. Install PLATECH
+2. Copy/Paste the html in latex_tag.html (the comments will help you) to your `<head>`
+3. Edit the 'server' variable to match your PLATECH install folder ( e.g. `var server = "http://yourdom.ain/myfolder";` )
+4. Use the `<latex>` tag freely in your doument `<body>`!
 
 # Installation
-    1. Check for php to be enabled and create folder named e.g. 'myfolder'
-    2. Place the index.php in 'myfolder'
-    3. Create a subfolder called e.g. 'mycache'
-    4. Now edit the php settings of the file index.php as suggested in comments
+1. Check for php to be enabled and create folder named e.g. 'myfolder'
+2. Place the index.php in 'myfolder'
+3. Create a subfolder called e.g. 'mycache'
+4. Now edit the php settings of the file index.php as suggested in comments
 
 you are done!
 
