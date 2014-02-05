@@ -8,6 +8,7 @@ The purpose is to quicken up the load times of webpages containing embedded comp
 
 #New!
 
++ Added Full Plugin, [check it out!](/full_plugin/README.md)
 
 + Added a jQuery script to embed latex compiled images using the <latex dpi="integer">your \LatexCode</latex>.
 
