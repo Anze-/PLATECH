@@ -10,7 +10,7 @@ With this plugin you'll be able to embed latex using the <latex> tag and also ha
 + Install and configure PLATECH
 + Copy the latex.js and latex.css to a public folder of your web server
 + Edit latex.js so that it points to the PLATEX index.php folder and to the latex.css file using absolute urls
-+ Include the JQuery library with something like `<script type="text/javascript" script src = '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>` in your `head`
++ Include the JQuery library with something like `<script type="text/javascript" script src = '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>` in your `<head>`
 + At the end of the page, between `</body>` and `</html>` include the plugin script with `<script src="../your/path/latex.js"> </script>`
 + You are now ready to use the <latex> tag in your body. To know more about how to use the tag read the [PLATECH main readme](../README.md)
 
