@@ -3,6 +3,8 @@ PLATECH Full JQ Plugin
 #Features
 With this plugin you'll be able to embed latex using the <latex> tag and also have a menu (right click) which will let you copy the latex code in your clipboard and will also link the latex picture to be more user friendly.
 
++Now this repo is related to a major project, [go to the homepage!](http://anze-.github.io/clsipy/)
+
 #How to..
 
 + Have a compiler server
