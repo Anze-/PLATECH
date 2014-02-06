@@ -28,7 +28,7 @@
 if(hasFlash){
 buttons="<a id='copylatex'>Copy Latex Code</a><br><hr><a id='copyurl'>Image URL</a>";
 } else {
-buttons="<p id='zenmode'>Latex Code</a> <br><hr><a id='copyurl'>Image URL</a> <br><hr><a href='http://www.adobe.com/go/getflashplayer'><img src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>";
+buttons="<a id='zenmode'>Latex Code</a> <br><hr><a id='copyurl'>Image URL</a> <br><hr><a href='http://www.adobe.com/go/getflashplayer'><img src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>";
 }
 
 
