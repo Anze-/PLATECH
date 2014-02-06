@@ -49,6 +49,6 @@ padding:4%;
     -khtml-opacity: 1;
     opacity: 1;
 }
-#zenmode{}
-#copylatex{}
+#zenmode{cursor: pointer; cursor: hand;}
+#copylatex{cursor: pointer; cursor: hand;}
 #copyurl{}
