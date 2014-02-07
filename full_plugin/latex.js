@@ -1,7 +1,5 @@
  var server = "http://yourdom.ain/latex"; //set this option to the absolute path to the folder where your PLATECH index.php is founf 
  var css = "http://yourdom.ain/folder/latex.css"; //set this option to absolute path to the latex.css file
- function
-
  $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', css) );
  $.getScript("//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/1.3.1/ZeroClipboard.min.js", function(){
 
