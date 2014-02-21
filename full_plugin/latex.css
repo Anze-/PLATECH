@@ -19,6 +19,7 @@ hr {
   display: none;
   position: absolute;
   text-align:center;
+  z-index: 10000;
 }
 #overlay {
     position: fixed;
